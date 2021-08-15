@@ -8,6 +8,11 @@ $dark: #222;
   text-decoration: none;
 }
 
+span {
+  //word-break: break-word !important;
+  font-size: 12px !important;
+}
+
 .header {
   background: $main-color;
   padding: 16px 160px;
@@ -24,12 +29,14 @@ $dark: #222;
         height: auto;
       }
     }
-    .phone{
-      span{
+
+    .phone {
+      span {
         font-size: 24px;
         font-width: bold;
       }
     }
+
     a:last-child {
       color: #000;
       font-size: 24px;
@@ -80,7 +87,7 @@ $dark: #222;
 }
 
 section.hero {
-  padding: 16px 16px;
+  padding: 16px 160px;
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,8 +134,10 @@ section.hero {
         text-align: center;
         background: $main-color;
         border-radius: 0 0 8px 8px;
-        span{
-          white-space: nowrap !important;
+
+        span {
+          //white-space: nowrap !important;
+          font-size: 18px;
         }
       }
     }
@@ -238,23 +247,27 @@ section.about {
 
     .container {
       max-width: 100%;
-      .navbar-logo{
-        .bars{
-          display: block!important;
+
+      .navbar-logo {
+        .bars {
+          display: block !important;
           border: none;
           background: none;
           margin-right: 16px;
         }
-        .logo{
+
+        .logo {
           width: 120px;
           height: 33px;
         }
 
       }
-      .site-dvider{
+
+      .site-dvider {
         display: none !important;
       }
-      .navbar-menu{
+
+      .navbar-menu {
         display: none !important;
       }
     }
@@ -262,6 +275,37 @@ section.about {
 }
 
 @media screen and (max-width: 1260px) {
+  section.hero {
+    padding: 16px 33px;
+    background-image: url("../img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .services {
+      .card {
+        border: none;
+        border-radius: 8px;
+
+        .card-img-top {
+          border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+          font-weight: 700;
+          font-size: 18px;
+          text-align: center;
+          background: $main-color;
+          border-radius: 0 0 8px 8px;
+
+          span {
+            white-space: nowrap !important;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+  }
   section.about {
     padding: 62px 62px;
     background-size: 596px 351px !important;
@@ -289,6 +333,56 @@ section.about {
 }
 
 @media screen and (max-width: 993px) {
+  section.hero {
+    .container {
+      max-width: 100%;
+    }
+
+    .context {
+      color: #fff;
+
+      h1 {
+        font-size: 36px !important;
+        line-height: 45.36px !important;
+        margin-top: 80px !important;
+      }
+
+      h2 {
+        margin-top: 16px !important;
+        font-size: 24px !important;
+        line-height: 30.24px !important;
+      }
+
+      .site-button {
+        margin-top: 39px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .services {
+      .card {
+        border: none;
+        border-radius: 8px;
+
+        .card-img-top {
+          border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+          font-weight: 700;
+          font-size: 18px;
+          text-align: center;
+          background: $main-color;
+          border-radius: 0 0 8px 8px;
+
+          span {
+            white-space: nowrap !important;
+          }
+        }
+      }
+    }
+
+  }
   section.about {
     .container {
       max-width: 100% !important;
@@ -326,20 +420,21 @@ section.about {
 @media screen and (max-width: 860px) {
   .header {
     .container {
-      .navbar-logo{
-        .logo{
+      .navbar-logo {
+        .logo {
           width: 87.3px;
           height: 24px;
           margin-right: 24px !important;
         }
 
       }
-        .header-button{
-          padding: 8px 12px!important;
-          width: 136px!important;
-          font-size: 16px;
-          line-height: 20.16px;
-        }
+
+      .header-button {
+        padding: 8px 12px !important;
+        width: 136px !important;
+        font-size: 16px;
+        line-height: 20.16px;
+      }
     }
   }
   section.about {
@@ -377,6 +472,46 @@ section.about {
 }
 
 @media screen and (max-width: 767px) {
+  section.hero {
+    .context {
+      h1 {
+        margin: 60px 0 24px 0;
+      }
+
+      h2 {
+        display: none;
+      }
+
+      .site-button {
+        display: none;
+      }
+    }
+
+    .services {
+      .card {
+        border: none;
+        border-radius: 8px;
+
+        .card-img-top {
+          border-radius: 8px 8px 0 0;
+        }
+
+        .card-body {
+          font-weight: 700;
+          font-size: 18px;
+          text-align: center;
+          background: $main-color;
+          border-radius: 0 0 8px 8px;
+
+          span {
+            white-space: nowrap !important;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+  }
   section.about {
     .container {
       .mobile-title {
@@ -422,10 +557,11 @@ section.about {
 }
 
 @media screen and (max-width: 320px) {
-  .header{
+  .header {
     padding: 10px 8px;
-    .header-button{
-      max-width: 100px!important;
+
+    .header-button {
+      max-width: 100px !important;
     }
   }
 }
