@@ -1,0 +1,75 @@
+.auto-main {
+  padding: 39px 160px;
+  background-color: #222222; }
+  .auto-main .container .auto-ambulance .title h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 16px; }
+  .auto-main .container .auto-ambulance .breadcrumb {
+    align-items: center;
+    padding: 0;
+    margin-bottom: 48px; }
+    .auto-main .container .auto-ambulance .breadcrumb .list {
+      background-color: #262626;
+      padding: 0; }
+      .auto-main .container .auto-ambulance .breadcrumb .list .list-item {
+        padding: 15px 24px 13px 24px; }
+        .auto-main .container .auto-ambulance .breadcrumb .list .list-item a {
+          display: flex;
+          align-items: center;
+          color: #a0a4a8;
+          font-size: 14px;
+          line-height: 24px; }
+          .auto-main .container .auto-ambulance .breadcrumb .list .list-item a img {
+            margin-left: 24px; }
+        .auto-main .container .auto-ambulance .breadcrumb .list .list-item:first-child {
+          background-color: #2E2E2E;
+          padding: 15px 29px 13px 29px; }
+          .auto-main .container .auto-ambulance .breadcrumb .list .list-item:first-child img {
+            margin-right: 12px;
+            margin-left: 0; }
+      .auto-main .container .auto-ambulance .breadcrumb .list .active a {
+        color: white; }
+  .auto-main .container .auto-ambulance .content .text p {
+    color: white;
+    text-align: justify;
+    font-size: 24px; }
+  .auto-main .container .auto-ambulance .content .image {
+    background-image: url("../img/logo-bg.png");
+    background-size: 604.15px 356px;
+    background-repeat: no-repeat; }
+  .auto-main .container .services .title {
+    margin-bottom: 29px; }
+    .auto-main .container .services .title h1 {
+      color: white;
+      font-size: 36px;
+      line-height: 45.36px;
+      font-weight: 700; }
+  .auto-main .container .services .main .card {
+    margin-right: 32px;
+    min-height: 568px;
+    display: flex;
+    align-items: center;
+    background-color: #262626; }
+    .auto-main .container .services .main .card .card-img {
+      text-align: center;
+      margin-top: 16px; }
+    .auto-main .container .services .main .card .card-title {
+      margin-top: 16px;
+      margin-bottom: 24px; }
+      .auto-main .container .services .main .card .card-title span {
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22.68px; }
+    .auto-main .container .services .main .card .card-menu .list .list-item {
+      display: flex;
+      margin-bottom: 8px;
+      color: white; }
+      .auto-main .container .services .main .card .card-menu .list .list-item .image {
+        display: inline-block;
+        margin-right: 10px; }
+
+/*# sourceMappingURL=avtoambulans.css.map */

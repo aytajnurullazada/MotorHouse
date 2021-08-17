@@ -5,7 +5,10 @@ $dark: #222;
 * {
   font-family: "Pt root ui", sans-serif !important;
   font-size: 16px;
-  text-decoration: none;
+  list-style: none;
+  a{
+    text-decoration: none;
+  }
 }
 
 .header {
@@ -267,21 +270,17 @@ section.our-services {
     }
 
     .row {
-      overflow:hidden;
       .card {
         background-color: #262626;
         text-align: center;
-        width: 256px;
         height: 256px;
-        padding: 48px 78px;
-        margin-bottom: 32px;
+        margin:15px auto;
         border-radius: 8px;
-        overflow: hidden;
 
         img {
-          width: 100%;
-          height: auto;
-          margin-bottom: 30px !important;
+          width: 140px;
+          margin: 20px auto;
+          height: 150px;
         }
 
         span {
@@ -420,7 +419,7 @@ section.contact-us {
         height: auto;
         object-fit: cover;
       }
-  }
+    }
   }
 }
 
@@ -1039,8 +1038,6 @@ section.footer {
       .row {
         .card {
           width: 200px;
-          height: 200px;
-          padding: 32px 52px;
         }
       }
     }
@@ -1055,11 +1052,11 @@ section.footer {
       }
 
       h2 {
-        display: none;
+        //display: none;
       }
 
       .site-button {
-        display: none;
+        //display: none;
       }
     }
 
@@ -1223,16 +1220,16 @@ section.footer {
       .row {
         .card {
           width: 150px;
-          height: 150px;
-          padding: 24px 39px;
+          height: 180px;
 
           img {
-            width: 80% !important;
+            width: 60% !important;
             margin-bottom: 5px !important;
           }
 
           span {
             font-size: 12px;
+            padding-bottom: 8px;
           }
         }
       }
@@ -1242,6 +1239,7 @@ section.footer {
 
 @media screen and (max-width: 576px) {
   section.hero {
+    padding: 16px;
     .services-carousel {
       display: block !important;
 
@@ -1263,7 +1261,6 @@ section.footer {
         width: 120px!important;
         border: none;
         border-radius: 8px;
-
         .card-img-top {
           border-radius: 8px 8px 0 0;
         }
@@ -1385,13 +1382,11 @@ section.footer {
     .container {
       .row {
         .card {
-          width: 130px;
+          width: auto;
           height: 130px;
-          padding: 16px 26px;
 
           img {
-            width: 70% !important;
-            margin-bottom: 5px !important;
+            height: 80px;
           }
 
           span {
@@ -1433,16 +1428,14 @@ section.footer {
     .container {
       .row {
         .card {
-          width: 102px;
-          padding: 16px 8px;
+          width: auto;
 
           img {
             width: 100%;
-            margin-bottom: 10px !important;
           }
 
           span {
-            font-size: 12px;
+            font-size: 8px;
             line-height: 15.12px;
           }
         }
