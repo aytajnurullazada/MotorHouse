@@ -1,3 +1,4 @@
+$main-color: #FFDD00;
 section.questionAnswer {
   background-color: #222222;
   color: white;
@@ -62,21 +63,20 @@ section.questionAnswer {
     }
 
     .main {
-      //display: flex;
-      //align-items: center;
-      //justify-content: center;
-      //flex-direction: column;
+      padding: 0 160px;
       .form-title {
         margin-bottom: 64px;
         h1 {
           font-size: 24px;
           line-height: 30.24px;
           font-weight: 700;
+          text-align: center;
         }
       }
       .form{
       .row{
         input{
+          width: 100%;
           font-weight: 700;
           font-size: 18px;
           line-height: 18px;
@@ -86,9 +86,47 @@ section.questionAnswer {
           border-radius: 10px;
           background: none;
           padding: 21px 12px;
+          transition: all 400ms;
+          &:focus{
+            outline: none;
+            border-color:$main-color;
+          }
+          &:first-child{
+            margin-right: 8px;
+          }
+        }
 
+        margin-bottom: 32px;
+      }
+        textarea{
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 18px;
+          width: 100%;
+          color: white;
+          border: 1px solid rgba(255, 255, 255, 1);
+          border-radius: 10px;
+          background: none;
+          padding: 21px 12px 81px;
+          &:focus{
+            outline: none;
+            border-color:$main-color;
+          }
         }
       }
+      .submitBtn{
+        text-align: end;
+        margin: 22px 0 25px 0;
+        button {
+          background-color: rgba(255, 221, 0, 1);
+          border-radius: 10px;
+          font-size: 18px;
+          line-height: 22.68px;
+          text-align: center;
+          border: none;
+          padding: 18px 77px;
+          font-weight: bold;
+        }
       }
     }
   }

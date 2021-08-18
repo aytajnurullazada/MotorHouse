@@ -37,21 +37,58 @@ section.questionAnswer {
             margin-left: 0; }
       section.questionAnswer .container .breadcrumb .list .active a {
         color: white; }
-  section.questionAnswer .container .main .form-title {
-    margin-bottom: 64px; }
-    section.questionAnswer .container .main .form-title h1 {
-      font-size: 24px;
-      line-height: 30.24px;
-      font-weight: 700; }
-  section.questionAnswer .container .main .form .row input {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    width: 100%;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    background: none;
-    padding: 21px 12px; }
+  section.questionAnswer .container .main {
+    padding: 0 160px; }
+    section.questionAnswer .container .main .form-title {
+      margin-bottom: 64px; }
+      section.questionAnswer .container .main .form-title h1 {
+        font-size: 24px;
+        line-height: 30.24px;
+        font-weight: 700;
+        text-align: center; }
+    section.questionAnswer .container .main .form .row {
+      margin-bottom: 32px; }
+      section.questionAnswer .container .main .form .row input {
+        width: 100%;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        width: 100%;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        background: none;
+        padding: 21px 12px;
+        transition: all 400ms; }
+        section.questionAnswer .container .main .form .row input:focus {
+          outline: none;
+          border-color: #FFDD00; }
+        section.questionAnswer .container .main .form .row input:first-child {
+          margin-right: 8px; }
+    section.questionAnswer .container .main .form textarea {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      width: 100%;
+      color: white;
+      border: 1px solid white;
+      border-radius: 10px;
+      background: none;
+      padding: 21px 12px 81px; }
+      section.questionAnswer .container .main .form textarea:focus {
+        outline: none;
+        border-color: #FFDD00; }
+    section.questionAnswer .container .main .submitBtn {
+      text-align: end;
+      margin: 22px 0 25px 0; }
+      section.questionAnswer .container .main .submitBtn button {
+        background-color: #ffdd00;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 22.68px;
+        text-align: center;
+        border: none;
+        padding: 18px 77px;
+        font-weight: bold; }
 
 /*# sourceMappingURL=sualCavab.css.map */
