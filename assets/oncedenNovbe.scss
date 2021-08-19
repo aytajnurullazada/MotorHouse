@@ -1,0 +1,217 @@
+body {
+  background-color: #222222;
+
+  .container {
+    max-width: 100%;
+    padding: 48px 160px;
+
+    .navbar {
+      .logo {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .queueMain {
+      .title {
+        margin-top: 54px;
+        margin-bottom: 32px;
+
+        h1 {
+          color: white;
+          font-size: 36px;
+          line-height: 45.36px;
+          text-align: center;
+        }
+
+      }
+
+      .form {
+        padding: 0 50px;
+
+        .row {
+          input, select, textarea {
+            color: #A0A4A8;
+            border: 1px solid rgba(255, 255, 255, 1);
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            padding: 21px 12px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 18px;
+            width: 100%;
+            margin-bottom: 32px;
+
+            &:focus {
+              outline: none;
+              border-color: #FFDD00;
+            }
+          }
+
+          .car-code {
+            position: absolute;
+            color: #A0A4A8;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 8px 12px;
+          }
+
+          #car-brand {
+            input {
+              position: relative;
+              margin-bottom: 0;
+            }
+
+            button {
+              background: none;
+              border: none;
+              position: absolute;
+            }
+
+            ul {
+              display: none;
+              position: absolute;
+            }
+          }
+
+          select {
+            option {
+              background: #222222;
+
+              &:hover {
+                background-color: #0c4128;
+              }
+            }
+
+          }
+        }
+
+        .submit-button {
+          text-align: end;
+
+          button {
+            background-color: rgba(255, 221, 0, 1);
+            border-radius: 10px;
+            font-size: 18px;
+            line-height: 22.68px;
+            text-align: center;
+            border: none;
+            padding: 18px 77px;
+            font-weight: bold;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.modal-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+  position: absolute;
+
+  .modal-item {
+    max-width: 348px;
+    box-shadow: 2px 4px 15px 0px #00000012;
+    background-color: #262626;
+    border-radius: 2px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 30px 24px 24px 24px;
+
+    .modal-icon {
+      width: 60px;
+      height: 60px;
+      padding: 14px;
+      border-radius: 50%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .modal-message {
+      margin-bottom: 32px;
+      text-align: center!important;
+      span {
+        color: white;
+        font-weight: 700;
+        line-height: 24px;
+        font-size: 16px;
+
+      }
+    }
+
+    .modal-btn {
+      button {
+        padding: 13px 132px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 6px;
+      }
+    }
+  }
+  .modal1{
+    display: none;
+    border-top: 2px solid #2AC769;
+    .modal-icon{
+      background-color: #2AC769;
+    }
+  }
+  .modal2{
+    display: none;
+    border-top: 2px solid #FF6262;
+  .modal-icon{
+    background-color: #FF6262;
+  }
+    .modal-message{
+      margin-bottom: 16px;
+      .add{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: TT Interphases;
+        color: #A0A4A8;
+      }
+    }
+  }
+  .modal3{
+    display: none;
+    border-top: 2px solid #FF6262;
+    .modal-icon{
+      background-color: #FF6262;
+      margin-bottom: 20px;
+    }
+    .modal-message{
+      margin-bottom: 10px;
+    }
+    .error{
+      margin-left: 29px;
+      .err-mes{
+        margin-bottom: 4px;
+        span{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #A0A4A8;
+            margin-left: 14px;
+        }
+        &:last-child{
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

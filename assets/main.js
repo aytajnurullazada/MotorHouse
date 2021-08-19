@@ -1,16 +1,21 @@
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:true,
-    responsive:{
-        0:{
-            items:3
-        },
-        600:{
-            items:4
-        },
-        1000:{
-            items:4
-        }
-    }
-})
+$(document).ready(function (){
+    $('#car-brand-input').click(function (){
+        $('.menu').toggle();
+    });
+
+    $('.menu li').click(function (){
+        let elem = $(this).text()
+        elem = $('#car-brand-input').val()
+    })
+
+    //button
+    $('.submit-button').click(function (){
+        $('.modal-overlay').show();
+        $('.modal1').show();
+    })
+    $('.close-btn').click(function (){
+        $('.modal-overlay').hide();
+        $('.modal-item').hide();
+    })
+
+});

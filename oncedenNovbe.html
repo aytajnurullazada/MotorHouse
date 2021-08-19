@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/oncedenNovbe.css">
+    <title>Öncədən növbə</title>
+</head>
+<body>
+<div class="modal-overlay">
+    <div class="modal-item modal1">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <div class="modal-icon">
+                <img src="./img/Placeholder.svg">
+            </div>
+            <div class="modal-message">
+                <span>Sorğunuz qeydə alındı</span>
+            </div>
+        </div>
+
+        <div class="modal-btn">
+            <button class="close-btn">Bağla</button>
+        </div>
+    </div>
+    <div class="modal-item modal2">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <div class="modal-icon">
+                <img src="./img/PlaceholderX.svg">
+            </div>
+            <div class="modal-message">
+                <span>Sorğunuz qeydə alınmadı</span> <br>
+                <span class="add">Qeyd etdiyiniz avtomobil dövlət nömrə nişanı tapılmadı </span>
+            </div>
+        </div>
+
+        <div class="modal-btn">
+            <button class="close-btn">Bağla</button>
+        </div>
+    </div>
+    <div class="modal-item modal3">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+            <div class="modal-icon">
+                <img src="./img/PlaceholderX.svg">
+            </div>
+            <div class="modal-message">
+                <span>Sorğunuz qeydə alınmadı</span> <br>
+            </div>
+        </div>
+        <div class="error">
+            <div class="err-mes">
+                <img src="./img/Errortext.svg" alt="">
+                <span>Mobil nömrə yalnışdır</span>
+            </div>
+            <div class="err-mes">
+                <img src="./img/Errortext.svg" alt="">
+                <span>E-poçt ünvanı yalnışdır</span>
+            </div>
+        </div>
+        <div class="modal-btn">
+            <button class="close-btn">Bağla</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/Group91.svg" alt="">
+            </a>
+        </div>
+    </nav>
+    <section class="queueMain">
+        <div class="title">
+            <h1>Öncədən növbə</h1>
+        </div>
+        <div class="form">
+            <div class="row d-flex">
+                <div class="col-lg-6">
+                    <input placeholder="Ad" type="text">
+                </div>
+                <div class="col-lg-6">
+                    <div class="car-code">Avtomobilin dövlət nömrə nişanı</div>
+                    <input placeholder="77 AB 324" type="text">
+                </div>
+                <div class="col-lg-6">
+                    <input placeholder="Soyad" type="text">
+                </div>
+                <div id="car-brand" class="col-lg-6">
+                    <input id="car-brand-input" placeholder="Avtomobilin markası" type="text">
+                    <button id="brand-btn">
+                        <img src="./img/angle-down.svg" alt="">
+                    </button>
+                    <ul class="menu">
+                        <li id="1" class="list-group-item">
+                            test
+                        </li>
+                        <li id="2" class="list-group-item">
+                            test2
+                        </li>
+                        <li id="3" class="list-group-item">
+                            test3
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <input placeholder="E-poçt ünvanı" type="text">
+                </div>
+                <div class="col-lg-3">
+                    <input placeholder="Model" type="text">
+                </div>
+                <div class="col-lg-3">
+                    <input placeholder="YYYY" type="text">
+                </div>
+                <div class="col-lg-6">
+                    <select name="phoneCode" id="phoneCode">
+                        <option value="050">050</option>
+                        <option value="051">051</option>
+                        <option value="055">055</option>
+                        <option value="070">070</option>
+                        <option value="077">077</option>
+                    </select>
+                </div>
+                <div class="col-lg-6">
+                    <input placeholder="Vaxt" type="time">
+                </div>
+                <div class="col-lg-6">
+                    <textarea placeholder="Görüləcək iş" name="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="col-lg-6">
+                    <textarea placeholder="Şərh" name="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="submit-button">
+                <button>Göndər</button>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
