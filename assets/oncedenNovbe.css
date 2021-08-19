@@ -39,22 +39,42 @@ body {
         padding: 8px 12px; }
       body .container .queueMain .form .row #car-brand input {
         position: relative;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        cursor: pointer; }
       body .container .queueMain .form .row #car-brand button {
         background: none;
         border: none;
-        position: absolute; }
+        position: absolute;
+        right: 22px;
+        top: 17px; }
       body .container .queueMain .form .row #car-brand ul {
         display: none;
-        position: absolute; }
-      body .container .queueMain .form .row select option {
-        background: #222222; }
-        body .container .queueMain .form .row select option:hover {
-          background-color: #0c4128; }
+        display: inline-block;
+        width: 200px;
+        list-style: none;
+        background-color: #312f2f;
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        left: 15px;
+        border-radius: 8px;
+        width: 95%; }
+        body .container .queueMain .form .row #car-brand ul .active {
+          background-color: #FFDD00; }
+        body .container .queueMain .form .row #car-brand ul li {
+          color: white;
+          padding: 10px;
+          cursor: pointer; }
+          body .container .queueMain .form .row #car-brand ul li:hover {
+            background-color: #FFDD00; }
+          body .container .queueMain .form .row #car-brand ul li:first-child {
+            border-radius: 8px 8px 0 0; }
+          body .container .queueMain .form .row #car-brand ul li:last-child {
+            border-radius: 0 0 8px 8px; }
       body .container .queueMain .form .submit-button {
         text-align: end; }
         body .container .queueMain .form .submit-button button {
-          background-color: #ffdd00;
+          background-color: #FFDD00;
           border-radius: 10px;
           font-size: 18px;
           line-height: 22.68px;

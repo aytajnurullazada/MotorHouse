@@ -1,3 +1,4 @@
+$main-color: #FFDD00;
 body {
   background-color: #222222;
 
@@ -46,7 +47,7 @@ body {
 
             &:focus {
               outline: none;
-              border-color: #FFDD00;
+              border-color: $main-color;
             }
           }
 
@@ -63,37 +64,57 @@ body {
             input {
               position: relative;
               margin-bottom: 0;
+              cursor: pointer;
             }
 
             button {
               background: none;
               border: none;
               position: absolute;
+              right: 22px;
+              top: 17px;
             }
 
             ul {
               display: none;
+              display: inline-block;
+              width: 200px;
+              list-style: none;
+              background-color: #312f2f;
+              padding: 0;
               position: absolute;
-            }
-          }
+              top: 70px;
+              left: 15px;
+              border-radius: 8px;
+              width: 95%;
+              .active{
+                background-color: $main-color;
+              }
+              li{
+                color: white;
+                padding: 10px;
+                cursor: pointer;
+                &:hover{
+                  background-color: $main-color;
+                }
+                &:first-child{
+                  border-radius: 8px 8px 0 0;
+                }
+                &:last-child{
+                  border-radius: 0 0 8px 8px;
+                }
 
-          select {
-            option {
-              background: #222222;
-
-              &:hover {
-                background-color: #0c4128;
               }
             }
-
           }
+
         }
 
         .submit-button {
           text-align: end;
 
           button {
-            background-color: rgba(255, 221, 0, 1);
+            background-color:$main-color;
             border-radius: 10px;
             font-size: 18px;
             line-height: 22.68px;

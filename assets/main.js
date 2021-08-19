@@ -1,19 +1,24 @@
-$(document).ready(function (){
-    $('#car-brand-input').click(function (){
+$(document).ready(function () {
+    $('#car-brand-input').click(function () {
         $('.menu').toggle();
     });
 
-    $('.menu li').click(function (){
+    $('.menu li').click(function () {
+        $('.list-item').removeClass('active');
+        $(this).addClass("active");
         let elem = $(this).text()
-        elem = $('#car-brand-input').val()
+        document.getElementById('car-brand-input').value = elem
+        // document.getElementById('car-brand-input').value.css("font-size", "72px")
+        $('.menu').hide();
+
     })
 
     //button
-    $('.submit-button').click(function (){
+    $('.submit-button').click(function () {
         $('.modal-overlay').show();
         $('.modal1').show();
     })
-    $('.close-btn').click(function (){
+    $('.close-btn').click(function () {
         $('.modal-overlay').hide();
         $('.modal-item').hide();
     })
