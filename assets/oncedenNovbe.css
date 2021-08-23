@@ -1,6 +1,10 @@
 body {
   background-color: #222222; }
   body .container {
+    background-image: url("../img/queueBg.png");
+    background-size: 1690px 730px;
+    background-repeat: no-repeat;
+    background-position: center;
     max-width: 100%;
     padding: 48px 160px; }
     body .container .navbar .logo img {
@@ -37,20 +41,19 @@ body {
         font-size: 14px;
         line-height: 14px;
         padding: 8px 12px; }
-      body .container .queueMain .form .row #car-brand input {
+      body .container .queueMain .form .row .select input {
         position: relative;
         margin-bottom: 0;
         cursor: pointer; }
-      body .container .queueMain .form .row #car-brand button {
+      body .container .queueMain .form .row .select button {
         background: none;
         border: none;
         position: absolute;
         right: 22px;
         top: 17px; }
-      body .container .queueMain .form .row #car-brand ul {
+      body .container .queueMain .form .row .select ul {
         display: none;
-        display: inline-block;
-        width: 200px;
+        z-index: 1;
         list-style: none;
         background-color: #312f2f;
         padding: 0;
@@ -59,17 +62,17 @@ body {
         left: 15px;
         border-radius: 8px;
         width: 95%; }
-        body .container .queueMain .form .row #car-brand ul .active {
+        body .container .queueMain .form .row .select ul .active {
           background-color: #FFDD00; }
-        body .container .queueMain .form .row #car-brand ul li {
+        body .container .queueMain .form .row .select ul li {
           color: white;
           padding: 10px;
           cursor: pointer; }
-          body .container .queueMain .form .row #car-brand ul li:hover {
+          body .container .queueMain .form .row .select ul li:hover {
             background-color: #FFDD00; }
-          body .container .queueMain .form .row #car-brand ul li:first-child {
+          body .container .queueMain .form .row .select ul li:first-child {
             border-radius: 8px 8px 0 0; }
-          body .container .queueMain .form .row #car-brand ul li:last-child {
+          body .container .queueMain .form .row .select ul li:last-child {
             border-radius: 0 0 8px 8px; }
       body .container .queueMain .form .submit-button {
         text-align: end; }

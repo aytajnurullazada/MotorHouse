@@ -6,7 +6,8 @@ $dark: #222;
   font-family: "Pt root ui", sans-serif !important;
   font-size: 16px;
   list-style: none;
-  a{
+
+  a {
     text-decoration: none;
   }
 }
@@ -116,11 +117,13 @@ section.hero {
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 
   .context {
     color: #fff;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 0 !important;
 
     h1 {
       font-size: 48px;
@@ -144,7 +147,7 @@ section.hero {
       line-height: 20.16px;
       display: inline-block;
       width: 224px;
-      margin: 102px 0 62px 0;
+      margin: 102px 0 269px 0;
     }
   }
 
@@ -153,6 +156,13 @@ section.hero {
   }
 
   .services {
+    width: 100%;
+    padding: 0 16px;
+    bottom: -57px;
+    z-index: 1;
+    justify-content: center;
+    left: 0 !important;
+    right: 0 !important;
     .card {
       border: none;
       border-radius: 8px;
@@ -179,7 +189,7 @@ section.hero {
 }
 
 section.about {
-  padding: 64px 160px;
+  padding: 136px 160px 160px 64px;
   background-color: $dark;
   background-image: url("../img/logo-bg.png");
   background-position: right;
@@ -274,7 +284,7 @@ section.our-services {
         background-color: #262626;
         text-align: center;
         height: 256px;
-        margin:15px auto;
+        margin: 15px auto;
         border-radius: 8px;
 
         img {
@@ -293,7 +303,7 @@ section.our-services {
 }
 
 section.contact {
-  background-image: url("../img/Group101.png");
+  background-image: url("../img/Group1268.jpg");
   background-size: cover;
 
   button {
@@ -332,9 +342,10 @@ section.contact {
         line-height: 18px;
         color: white;
         transition: all 400ms;
-        &:focus{
+
+        &:focus {
           outline: none;
-          border-color:$main-color;
+          border-color: $main-color;
         }
       }
 
@@ -349,9 +360,10 @@ section.contact {
         line-height: 18px;
         color: white;
         transition: all 400ms;
-        &:focus{
+
+        &:focus {
           outline: none;
-          border-color:$main-color;
+          border-color: $main-color;
         }
       }
     }
@@ -361,6 +373,7 @@ section.contact {
 section.contact-us {
   background-color: #222222;
   background-size: 495px 292px;
+
   .container {
 
     padding: 81px;
@@ -413,7 +426,7 @@ section.contact-us {
     }
 
     .map {
-      img{
+      img {
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -456,6 +469,7 @@ section.footer {
       .second {
         .list {
           overflow: hidden;
+
           a {
             text-decoration: none;
 
@@ -471,9 +485,10 @@ section.footer {
       }
 
       .third {
-        a{
+        a {
           text-decoration: none;
         }
+
         span {
           color: $main-color;
           text-align: center;
@@ -511,7 +526,7 @@ section.footer {
 @media screen and (max-width: 1440px) {
   section.about {
     //background-size: 552px 325px;
-    padding: 64px 100px;
+    padding: 136px 100px;
   }
 }
 
@@ -596,6 +611,7 @@ section.footer {
 
     .container {
       max-width: 100%;
+
       .row {
         .first {
           .logo {
@@ -638,9 +654,10 @@ section.footer {
         }
 
         .third {
-          a{
+          a {
             text-decoration: none;
           }
+
           span {
             color: $main-color;
             text-align: center;
@@ -709,7 +726,7 @@ section.footer {
 
   }
   section.about {
-    padding: 62px 62px;
+    padding: 100px 62px;
     background-size: 596px 351px !important;
 
     .image {
@@ -757,6 +774,7 @@ section.footer {
     .container {
       max-width: 100%;
       padding: 48px 19px;
+
       .contact {
         background-image: url("../img/logo-bg.png");
         background-size: 495px 292px;
@@ -796,6 +814,8 @@ section.footer {
 
 @media screen and (max-width: 993px) {
   section.hero {
+    padding: 16px 5px 160px;
+
     .container {
       max-width: 100%;
     }
@@ -821,10 +841,13 @@ section.footer {
       }
     }
 
+
     .services {
+      justify-content: space-around;
       .card {
         border: none;
         border-radius: 8px;
+        width: 148px !important;
 
         .card-img-top {
           border-radius: 8px 8px 0 0;
@@ -854,7 +877,7 @@ section.footer {
       }
     }
 
-    padding: 48px 16px !important;
+    padding: 160px 16px 48px !important;
 
     .image {
       margin-right: 34px !important;
@@ -883,14 +906,17 @@ section.footer {
   section.footer {
     .container {
       max-width: 100%;
+
       .row {
         .first {
           display: flex;
+
           .logo {
             margin-right: 70px;
             width: 116.4px;
             height: 32px;
-            img{
+
+            img {
               width: 100%;
               height: auto;
             }
@@ -932,9 +958,10 @@ section.footer {
         }
 
         .third {
-          a{
+          a {
             text-decoration: none;
           }
+
           span {
             color: $main-color;
             text-align: center;
@@ -971,8 +998,9 @@ section.footer {
 
 }
 
-@media screen and (max-width: 991px){
-  section.contact-us{
+@media screen and (max-width: 991px) {
+
+  section.contact-us {
 
   }
 }
@@ -997,6 +1025,15 @@ section.footer {
       }
     }
   }
+  section.hero{
+    .container{
+      .services-main{
+        .card{
+          width: 138px !important;
+        }
+      }
+    }
+  }
   section.about {
     .container {
       max-width: 100% !important;
@@ -1006,7 +1043,7 @@ section.footer {
       }
     }
 
-    padding: 48px 64px !important;
+    padding: 80px 64px !important;
 
     .image {
       margin-right: 34px !important;
@@ -1043,8 +1080,9 @@ section.footer {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   section.hero {
+    padding: 16px 5px;
     .context {
       h1 {
         margin: 60px 0 24px 0;
@@ -1058,22 +1096,26 @@ section.footer {
         //display: none;
       }
     }
+    .services-carousel {
+      display: block !important;
 
+      .owl-nav {
+        display: none !important;
+      }
+
+      .owl-dot {
+        display: none !important;
+      }
+    }
+
+    .services-main {
+      display: none !important;
+    }
     .services {
       .card {
-        border: none;
-        border-radius: 8px;
-
-        .card-img-top {
-          border-radius: 8px 8px 0 0;
-        }
 
         .card-body {
-          font-weight: 700;
           font-size: 18px;
-          text-align: center;
-          background: $main-color;
-          border-radius: 0 0 8px 8px;
 
           span {
             white-space: nowrap !important;
@@ -1085,7 +1127,8 @@ section.footer {
 
   }
   section.about {
-    background-size: 596px 351px!important;
+    background-size: 596px 351px !important;
+
     .container {
       .mobile-title {
         h1 {
@@ -1096,7 +1139,6 @@ section.footer {
       }
     }
 
-    padding: 64px 16px !important;
 
     .image {
       width: 343px !important;
@@ -1155,6 +1197,7 @@ section.footer {
     background-color: #222222;
     background-size: 495px 292px;
     background-repeat: no-repeat;
+
     .container {
       .contact {
         .contact-header {
@@ -1202,13 +1245,14 @@ section.footer {
 
     }
   }
-  section.footer{
-    .first{
-      justify-content: center!important;
+  section.footer {
+    .first {
+      justify-content: center !important;
     }
-    .second{
-      display: flex!important;
-      justify-content: center!important;
+
+    .second {
+      display: flex !important;
+      justify-content: center !important;
     }
   }
 }
@@ -1239,27 +1283,14 @@ section.footer {
 @media screen and (max-width: 576px) {
   section.hero {
     padding: 16px;
-    .services-carousel {
-      display: block !important;
 
-      .owl-nav {
-        display: none !important;
-      }
-
-      .owl-dot {
-        display: none !important;
-      }
-    }
-
-    .services-main {
-      display: none !important;
-    }
 
     .services {
       .card {
-        width: 120px!important;
+        width: 120px !important;
         border: none;
         border-radius: 8px;
+
         .card-img-top {
           border-radius: 8px 8px 0 0;
         }
@@ -1345,7 +1376,7 @@ section.footer {
       }
 
       .map {
-        img{
+        img {
           width: 100%;
           height: auto;
           object-fit: cover;
@@ -1354,23 +1385,35 @@ section.footer {
     }
   }
   section.footer {
-    padding: 32px 16px!important;
+    padding: 0 !important;
+
     .container {
       .row {
         .first {
           flex-direction: column;
           align-items: center;
-          .logo{
+
+          .logo {
             text-align: center;
             width: 233px;
             height: 64px;
           }
+
           .social {
             justify-content: center;
             margin-bottom: 32px;
           }
         }
-
+        .second{
+          ul{
+            &:first-child{
+              padding-left: 0;
+            }
+            li{
+              font-size: 12px;
+            }
+          }
+        }
       }
     }
   }
@@ -1396,10 +1439,11 @@ section.footer {
     }
   }
 }
-@media screen and(max-width: 490px){
+
+@media screen and(max-width: 490px) {
   .services {
     .card {
-      max-width: 80px!important;
+      max-width: 80px !important;
       border: none;
       border-radius: 8px;
 
@@ -1415,7 +1459,7 @@ section.footer {
         border-radius: 0 0 8px 8px;
 
         span {
-          font-size: 8px!important;
+          font-size: 8px !important;
         }
       }
     }

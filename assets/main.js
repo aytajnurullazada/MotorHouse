@@ -1,16 +1,14 @@
 $(document).ready(function () {
-    $('#car-brand-input').click(function () {
-        $('.menu').toggle();
+    $('.select-input, .select-btn').click(function () {
+       $(this).siblings('.menu').toggle()
     });
 
     $('.menu li').click(function () {
-        $('.list-item').removeClass('active');
+        $(this).siblings('.list-item').removeClass('active');
         $(this).addClass("active");
         let elem = $(this).text()
-        document.getElementById('car-brand-input').value = elem
-        // document.getElementById('car-brand-input').value.css("font-size", "72px")
+        $(this).parent().siblings('.select-input').val(elem)
         $('.menu').hide();
-
     })
 
     //button
