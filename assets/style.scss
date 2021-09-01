@@ -468,7 +468,7 @@ section.footer {
 
       .second {
         .list {
-          overflow: hidden;
+          //overflow: hidden;
 
           a {
             text-decoration: none;
@@ -478,13 +478,15 @@ section.footer {
               font-weight: 400;
               color: white;
               list-style: none;
-              white-space: nowrap;
+              word-break: break-all;
+              //white-space: nowrap;
             }
           }
         }
       }
 
       .third {
+        margin-bottom: 32px;
         a {
           text-decoration: none;
         }
@@ -1397,6 +1399,7 @@ section.footer {
             text-align: center;
             width: 233px;
             height: 64px;
+            margin: 32px 0 36px 0;
           }
 
           .social {
@@ -1437,6 +1440,9 @@ section.footer {
         }
       }
     }
+  }
+  section.about{
+    padding: 64px 16px!important;
   }
 }
 
@@ -1496,4 +1502,3 @@ section.footer {
     }
   }
 }
-

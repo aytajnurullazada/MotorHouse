@@ -1,0 +1,170 @@
+.title {
+  margin-bottom: 16px;
+
+  h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+}
+
+.breadcrumb {
+  align-items: center;
+  padding: 0;
+  margin-bottom: 48px;
+
+  .list {
+    background-color: rgba(38, 38, 38, 1);
+    padding: 0;
+    width: 100%;
+
+    .list-item {
+      padding: 15px 24px 13px 24px;
+      white-space: nowrap;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: rgba(160, 164, 168, 1);
+        font-size: 14px;
+        line-height: 24px;
+
+        img {
+          margin-left: 24px;
+        }
+      }
+
+      &:first-child {
+        background-color: #2E2E2E;
+        padding: 15px 29px 13px 29px;
+
+        img {
+          margin-right: 12px;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .active {
+      a {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .title {
+    h1 {
+      font-size: 38px;
+    }
+  }
+  .breadcrumb {
+
+    .list {
+      .list-item {
+        //padding: 16px 17px;
+        //white-space: nowrap;
+        a {
+
+          img {
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 567px) {
+  .title{
+    h1{
+      font-size: 32px;
+    }
+  }
+  .breadcrumb {
+
+    .list {
+      .list-item {
+
+        a {
+
+          img {
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .title{
+    h1{
+      font-size: 24px;
+    }
+  }
+  .breadcrumb {
+    margin-bottom: 32px;
+
+    .list {
+      .list-item {
+        padding: 17px 8px !important;
+
+        a {
+          font-size: 14px;
+
+          img {
+            margin-left: 8px;
+          }
+        }
+
+        &:first-child {
+          background-color: #2E2E2E;
+          padding: 15px 29px 13px 29px;
+
+          img {
+            margin-right: 8px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .active {
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .breadcrumb {
+    .list {
+      .list-item {
+        padding: 15px 7px !important;
+
+        a {
+          font-size: 12px;
+
+          img {
+            margin-left: 6px;
+          }
+        }
+
+        &:first-child {
+
+          padding: 15px 20px 13px 20px;
+
+          img {
+            margin-right: 8px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .active {
+
+      }
+    }
+  }
+}

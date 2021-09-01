@@ -70,6 +70,9 @@
           background-image: url("../img/logo-bg.png");
           background-size: 604.15px 356px;
           background-repeat: no-repeat;
+          img{
+            width: 100%;
+          }
         }
       }
 
@@ -90,7 +93,8 @@
       .main {
         .card {
           margin-right: 32px;
-          min-height: 568px;
+          height: 568px;
+
           display: flex;
           align-items: center;
           background-color: #262626;

@@ -3,56 +3,6 @@
   background-color: #222222;
   color: white;
   .container{
-    .title{
-      margin-bottom: 16px;
-      h1{
-        font-size: 42px;
-        font-weight: 700;
-        line-height: 50px;
-      }
-    }
-    .breadcrumb {
-      align-items: center;
-      padding: 0;
-      margin-bottom: 48px;
-
-      .list {
-        background-color: rgba(38, 38, 38, 1);
-        padding: 0;
-
-        .list-item {
-          padding: 15px 24px 13px 24px;
-
-          a {
-            display: flex;
-            align-items: center;
-            color: rgba(160, 164, 168, 1);
-            font-size: 14px;
-            line-height: 24px;
-
-            img {
-              margin-left: 24px;
-            }
-          }
-
-          &:first-child {
-            background-color: #2E2E2E;
-            padding: 15px 29px 13px 29px;
-
-            img {
-              margin-right: 12px;
-              margin-left: 0;
-            }
-          }
-        }
-
-        .active {
-          a {
-            color: rgba(255, 255, 255, 1);
-          }
-        }
-      }
-    }
     .content{
       background-image: url("../img/logo-bg.png");
       background-size: 698.15px 411.4px;
@@ -69,6 +19,109 @@
       .image{
         img{
           width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1190px) {
+  .electric-main{
+    padding: 32px 16px;
+    .container{
+      max-width: 100%;
+      .title{
+        h1{
+        }
+      }
+      .breadcrumb {
+
+        .list {
+          .list-item {
+            a {
+              img {
+              }
+            }
+
+            }
+          }
+        }
+      }
+      .content{
+
+        .text{
+          p{
+          }
+        }
+        .image{
+          img{
+
+          }
+        }
+      }
+    }
+  }
+@media screen and (max-width: 769px) {
+  .electric-main{
+    padding: 32px 64px;
+    .container{
+    }
+    .content{
+      align-items: center;
+      flex-direction: column-reverse;
+      .text{
+        margin-top: 32px;
+        margin-right: 0!important;
+        p{
+        }
+      }
+      .image{
+        img{
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 567px) {
+  .electric-main{
+    padding: 32px 16px;
+    .container{
+
+    }
+    .content{
+      align-items: center;
+      flex-direction: column-reverse;
+      .text{
+        margin-top: 32px;
+        margin-right: 0!important;
+        p{
+        }
+      }
+      .image{
+        img{
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .electric-main{
+    .container{
+
+    }
+    .content{
+      align-items: center;
+      flex-direction: column-reverse;
+      .text{
+        margin-top: 32px;
+        margin-right: 0!important;
+        p{
+        }
+      }
+      .image{
+        img{
+
         }
       }
     }

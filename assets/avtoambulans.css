@@ -40,6 +40,8 @@
     background-image: url("../img/logo-bg.png");
     background-size: 604.15px 356px;
     background-repeat: no-repeat; }
+    .auto-main .container .auto-ambulance .content .image img {
+      width: 100%; }
   .auto-main .container .services .title {
     margin-bottom: 29px; }
     .auto-main .container .services .title h1 {
@@ -49,7 +51,7 @@
       font-weight: 700; }
   .auto-main .container .services .main .card {
     margin-right: 32px;
-    min-height: 568px;
+    height: 568px;
     display: flex;
     align-items: center;
     background-color: #262626; }
