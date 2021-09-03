@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.select-input, .select-btn').click(function () {
+    $('.select-input, .select-btn').focus(function () {
        $(this).siblings('.menu').toggle()
     });
 
@@ -15,8 +15,10 @@ $(document).ready(function () {
     $('.submit-button').click(function () {
         $('.modal-overlay').show();
         $('.modal1').show();
+        $('body').css('overflow','hidden');
     })
     $('.close-btn').click(function () {
+        $('body').css('overflow','visible');
         $('.modal-overlay').hide();
         $('.modal-item').hide();
     })

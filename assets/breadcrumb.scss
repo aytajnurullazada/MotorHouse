@@ -2,6 +2,7 @@
   margin-bottom: 16px;
 
   h1 {
+    color: white;
     font-size: 42px;
     font-weight: 700;
     line-height: 50px;
@@ -20,7 +21,7 @@
 
     .list-item {
       padding: 15px 24px 13px 24px;
-      white-space: nowrap;
+      white-space: nowrap!important;
 
       a {
         display: flex;
@@ -83,7 +84,7 @@
     }
   }
   .breadcrumb {
-
+    margin-bottom: 32px;
     .list {
       .list-item {
 
@@ -105,7 +106,7 @@
     }
   }
   .breadcrumb {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 
     .list {
       .list-item {
@@ -138,7 +139,13 @@
 }
 
 @media screen and (max-width: 375px) {
+  .title{
+    h1{
+      font-size: 22px;
+    }
+  }
   .breadcrumb {
+    margin-bottom: 22px;
     .list {
       .list-item {
         padding: 15px 7px !important;

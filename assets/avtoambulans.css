@@ -51,7 +51,7 @@
       font-weight: 700; }
   .auto-main .container .services .main .card {
     margin-right: 32px;
-    height: 568px;
+    min-height: 568px;
     display: flex;
     align-items: center;
     background-color: #262626; }
