@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Motorhouse</title>
-    <link rel = "icon" href =
+    <link rel="icon" href=
             "./img/Group1243.png"
-          type = "image/x-icon">
+          type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
           integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -16,17 +16,108 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/mobile-menu.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+<section class="mobile-menu">
+    <div class="container">
+        <div class="row">
+            <div class="menu-header d-flex align-items-center">
+                <div class="close-btn">
+                    <img src="img/times.svg" alt="">
+                </div>
+                <div class="phone d-flex align-items-center">
+                    <img src="./img/phone-icon.png" alt="">
+                    <span>*8555</span>
+                </div>
+            </div>
+            <div style="padding: 40px 16px">
+                <div class="menu">
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-list-item">
+                            <div class="li d-flex justify-content-between">
+                                <span>Xidmətlər</span>
+                                <div class="menu-toggle">
+                                    <img src="./img/MobileAngle-right.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="subMenu-list">
+                                <li class="subMenu-list-item">
+                                    <a href="#">Fərdi</a>
+                                </li>
+                                <li class="subMenu-list-item">
+                                    <a href="#">Korparativ</a>
+                                </li>
+                                <li class="subMenu-list-item">
+                                    <a href="#">Sığorta halları</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="#">
+                                Avto Ambulans
+                            </a>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <div class="li d-flex justify-content-between">
+                                <span>Avto Market</span>
+                                <div class="menu-toggle">
+                                    <img src="./img/MobileAngle-right.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="subMenu-list">
+                                <li class="subMenu-list-item">
+                                    <a href="#">Test</a>
+                                </li>
+                                <li class="subMenu-list-item">
+                                    <a href="#">Test</a>
+                                </li>
+                                <li class="subMenu-list-item">
+                                    <a href="#">Test</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="#">
+                                Elektrik Avtomobilləri
+                            </a>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="#">
+                                Suallar/Cavablar
+                            </a>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="#">
+                                Motor house haqqında
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="line">
+                </div>
+                <div class="login-button d-flex justify-content-center">
+                    <a class="mobile-btn" href="#">
+                        <img src="./img/sign-in.svg" alt="">
+                        Daxil ol
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <nav class="header">
     <div class="container">
         <div class="navbar-logo d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
-                <button class="bars d-md-none d-inline-block bars">
+                <div id="mobile-nav" class="bars d-md-none d-inline-block bars">
                     <img src="./img/bars.svg" alt="Bars">
-                </button>
+                </div>
+
                 <a href="index.html" class="logo">
                     <img src="./img/logo.png" alt="Logo">
                 </a>
@@ -348,13 +439,17 @@
                                 <span>Bakı şəhəri, Qaradağ rayonu, Bakı Dairəvi yolu 1063</span>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="d-flex item align-items-center">
                             <img src="./img/Message_fill.svg" alt="">
-                            <span>info@motorhouse.az</span>
+                            <div>
+                                <span>info@motorhouse.az</span>
+                            </div>
                         </div>
-                        <div class="item">
+                        <div class="d-flex item align-items-center">
                             <img src="./img/Component%206.svg" alt="">
-                            <span>*8855</span>
+                            <div>
+                                <span>*8855</span>
+                            </div>
                         </div>
                     </div>
                     <div class="social">
@@ -468,6 +563,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="assets/carousel.js"></script>
+<script src="./assets/main.js"></script>
 </body>
 </html>

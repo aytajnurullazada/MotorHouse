@@ -163,6 +163,7 @@ section.hero {
     justify-content: center;
     left: 0 !important;
     right: 0 !important;
+
     .card {
       border: none;
       border-radius: 8px;
@@ -487,6 +488,7 @@ section.footer {
 
       .third {
         margin-bottom: 32px;
+
         a {
           text-decoration: none;
         }
@@ -534,7 +536,7 @@ section.footer {
 
 @media screen and (max-width: 1395px) {
   .header {
-    padding: 20px 16px;
+    padding: 16px;
 
     .container {
       max-width: 100%;
@@ -846,6 +848,7 @@ section.footer {
 
     .services {
       justify-content: space-around;
+
       .card {
         border: none;
         border-radius: 8px;
@@ -1009,6 +1012,7 @@ section.footer {
 
 @media screen and (max-width: 860px) {
   .header {
+    padding: 13px;
     .container {
       .navbar-logo {
         .logo {
@@ -1027,10 +1031,10 @@ section.footer {
       }
     }
   }
-  section.hero{
-    .container{
-      .services-main{
-        .card{
+  section.hero {
+    .container {
+      .services-main {
+        .card {
           width: 138px !important;
         }
       }
@@ -1085,6 +1089,7 @@ section.footer {
 @media screen and (max-width: 768px) {
   section.hero {
     padding: 16px 5px;
+
     .context {
       h1 {
         margin: 60px 0 24px 0;
@@ -1098,6 +1103,7 @@ section.footer {
         //display: none;
       }
     }
+
     .services-carousel {
       display: block !important;
 
@@ -1113,6 +1119,7 @@ section.footer {
     .services-main {
       display: none !important;
     }
+
     .services {
       .card {
 
@@ -1143,6 +1150,7 @@ section.footer {
 
 
     .image {
+      margin-right: 0 !important;
       width: 343px !important;
       height: 337px !important;
     }
@@ -1316,6 +1324,10 @@ section.footer {
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
+
+      .first {
+        margin-top: 0;
+      }
     }
 
     .image {
@@ -1407,12 +1419,14 @@ section.footer {
             margin-bottom: 32px;
           }
         }
-        .second{
-          ul{
-            &:first-child{
+
+        .second {
+          ul {
+            &:first-child {
               padding-left: 0;
             }
-            li{
+
+            li {
               font-size: 12px;
             }
           }
@@ -1441,8 +1455,8 @@ section.footer {
       }
     }
   }
-  section.about{
-    padding: 64px 16px!important;
+  section.about {
+    padding: 64px 16px !important;
   }
 }
 
@@ -1496,6 +1510,7 @@ section.footer {
 @media screen and (max-width: 320px) {
   .header {
     padding: 10px 8px;
+    font-size: 10px!important;
 
     .header-button {
       max-width: 100px !important;

@@ -1,0 +1,307 @@
+section.mobile-menu {
+  background-color: #222222;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  display: none;
+  height: 100%;
+  overflow: auto;
+
+  .container {
+    max-width: 100%;
+
+    .row {
+      .menu-header {
+        display: flex !important;
+        justify-content: space-between!important;
+        align-items: center;
+        padding: 17px;
+        background-color: #FFDD00;
+
+        .close-btn {
+
+
+          img {
+
+          }
+        }
+
+        .phone {
+          img {
+            margin-right: 4px;
+          }
+
+          span {
+            color: black;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30.24px;
+          }
+        }
+      }
+
+      .menu {
+
+        .mobile-menu-list {
+          padding: 0;
+
+          .mobile-menu-list-item {
+            color: #FFFFFFBF;
+            margin-bottom: 22px;
+            cursor: pointer;
+
+            a {
+              color: #FFFFFFBF;
+              font-size: 18px;
+              line-height: 18px;
+              font-weight: 700;
+            }
+
+            div {
+              .menu-toggle {
+
+              }
+
+              span {
+                color: #FFFFFFBF;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 700;
+              }
+            }
+
+            .subMenu-list {
+              display: none;
+              padding-left: 12px;
+
+              .subMenu-list-item {
+                margin-bottom: 22px;
+
+                &:first-child {
+                  margin-top: 8px;
+                }
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+
+                a {
+                  color: white;
+                  font-size: 16px;
+                  line-height: 16px;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+      .line {
+        border-top: 2px solid #E7E8EA
+      }
+
+      .login-button {
+        padding: 24px 49px;
+
+        .mobile-btn {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          outline: none;
+          border: none;
+          background-color: #FFDD00;
+          padding: 13px 16px;
+          white-space: nowrap;
+          font-size: 14px;
+          line-height: 14px;
+          border-radius: 6px;
+          color: black;
+          font-weight: 600;
+
+          img {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1395px) {
+
+  section.mobile-menu {
+    width: 322px;
+    top: 88px;
+    .container {
+      .row {
+        .menu-header {
+          display: none!important;
+          .close-btn {
+            img {
+
+            }
+          }
+
+          .phone {
+            img {
+
+            }
+
+            span {
+            }
+          }
+        }
+
+        .menu {
+
+          .mobile-menu-list {
+
+            .mobile-menu-list-item {
+
+              a {
+
+              }
+
+              div {
+                .menu-toggle {
+
+                }
+
+                span {
+
+                }
+              }
+
+              .subMenu-list {
+
+
+                .subMenu-list-item {
+
+                  &:first-child {
+
+                  }
+
+                  &:last-child {
+
+                  }
+
+                  a {
+
+                  }
+                }
+              }
+            }
+
+          }
+        }
+
+        .line {
+
+        }
+
+        .login-button {
+
+
+          .mobile-btn {
+
+            img {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 861px) {
+  section.mobile-menu {
+    top: 65px;
+  }
+}
+@media screen and (max-width: 769px) {
+  section.mobile-menu {
+    top: 0;
+    width: 100%;
+    .container {
+      .row {
+        .menu-header {
+          display: flex !important;
+          .close-btn {
+            img {
+
+            }
+          }
+
+          .phone {
+            img {
+
+            }
+
+            span {
+            }
+          }
+        }
+
+        .menu {
+
+          .mobile-menu-list {
+
+            .mobile-menu-list-item {
+
+              a {
+
+              }
+
+              div {
+                .menu-toggle {
+
+                }
+
+                span {
+
+                }
+              }
+
+              .subMenu-list {
+
+
+                .subMenu-list-item {
+
+                  &:first-child {
+
+                  }
+
+                  &:last-child {
+
+                  }
+
+                  a {
+
+                  }
+                }
+              }
+            }
+
+          }
+        }
+
+        .line {
+
+        }
+
+        .login-button {
+
+
+          .mobile-btn {
+
+            img {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
