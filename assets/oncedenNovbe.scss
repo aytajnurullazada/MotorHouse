@@ -56,6 +56,40 @@ body {
             }
           }
 
+          textarea {
+            padding: 21px 12px 81px;
+          }
+
+          #phone-num {
+            .phone-num-input {
+              padding-left: 70px;
+            }
+
+            .phone-select {
+              width: 15%;
+              max-width: max-content;
+
+              button {
+                left: 45px;
+                top: 15px;
+              }
+
+              ul {
+                left: 0;
+
+              }
+
+              .select-input {
+                color: white !important;
+                border: none;
+                color: white;
+                background: none;
+
+
+              }
+            }
+          }
+
           .car-code {
             position: absolute;
             color: #A0A4A8;
@@ -91,20 +125,25 @@ body {
               left: 15px;
               border-radius: 8px;
               width: 95%;
-              .active{
+
+              .active {
                 background-color: $main-color;
               }
-              li{
+
+              li {
                 color: white;
                 padding: 10px;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                   background-color: $main-color;
                 }
-                &:first-child{
+
+                &:first-child {
                   border-radius: 8px 8px 0 0;
                 }
-                &:last-child{
+
+                &:last-child {
                   border-radius: 0 0 8px 8px;
                 }
 
@@ -114,11 +153,12 @@ body {
 
         }
 
-        .submit-button {
+        .submit-button, .backToSite {
           text-align: end;
 
           button {
-            background-color:$main-color;
+            width: 100%;
+            background-color: $main-color;
             border-radius: 10px;
             font-size: 18px;
             line-height: 22.68px;
@@ -128,16 +168,40 @@ body {
             font-weight: bold;
           }
         }
+
+        .backToSite {
+          width: 100%;
+          border-radius: 10px;
+          font-size: 18px;
+          line-height: 22.68px;
+          text-align: center;
+          padding: 18px 77px;
+          font-weight: bold;
+          background-color: transparent;
+          color: $main-color;
+          border: 1px solid $main-color;
+          a{
+            color: $main-color;
+            text-decoration: none;
+          }
+
+        }
       }
 
     }
   }
 }
 
+.selectPhonePrefix::-webkit-input-placeholder {
+  color: white;
+  font-weight: 400;
+}
+
 .modal-overlay {
+  overflow: auto;
   display: none;
   width: 100%;
-  height: 100%;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.50);
   position: absolute;
 
@@ -164,7 +228,8 @@ body {
 
     .modal-message {
       margin-bottom: 32px;
-      text-align: center!important;
+      text-align: center !important;
+
       span {
         color: white;
         font-weight: 700;
@@ -187,22 +252,28 @@ body {
       }
     }
   }
-  .modal1{
+
+  .modal1 {
     display: none;
     border-top: 2px solid #2AC769;
-    .modal-icon{
+
+    .modal-icon {
       background-color: #2AC769;
     }
   }
-  .modal2{
+
+  .modal2 {
     display: none;
     border-top: 2px solid #FF6262;
-  .modal-icon{
-    background-color: #FF6262;
-  }
-    .modal-message{
+
+    .modal-icon {
+      background-color: #FF6262;
+    }
+
+    .modal-message {
       margin-bottom: 16px;
-      .add{
+
+      .add {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
@@ -211,31 +282,223 @@ body {
       }
     }
   }
-  .modal3{
+
+  .modal3 {
     display: none;
     border-top: 2px solid #FF6262;
-    .modal-icon{
+
+    .modal-icon {
       background-color: #FF6262;
       margin-bottom: 20px;
     }
-    .modal-message{
+
+    .modal-message {
       margin-bottom: 10px;
     }
-    .error{
+
+    .error {
       margin-left: 29px;
-      .err-mes{
+
+      .err-mes {
         margin-bottom: 4px;
-        span{
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0px;
-            color: #A0A4A8;
-            margin-left: 14px;
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0px;
+          color: #A0A4A8;
+          margin-left: 14px;
         }
-        &:last-child{
+
+        &:last-child {
           margin-bottom: 24px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  body {
+    .container {
+      padding: 48px 49px;
+
+      .navbar {
+        .logo {
+          img {
+          }
+        }
+      }
+
+      .queueMain {
+        .title {
+          h1 {
+
+          }
+
+        }
+
+        .form {
+          padding: 0;
+
+          .row {
+            input, select, textarea {
+
+            }
+
+            #phone-num {
+              .phone-num-input {
+              }
+
+              .phone-select {
+                width: 25%;
+
+                button {
+                }
+
+                ul {
+                }
+
+                .select-input {
+                }
+              }
+            }
+
+            .car-code {
+            }
+
+            .select {
+              input {
+
+              }
+
+              button {
+
+              }
+
+              ul {
+
+                .active {
+
+                }
+
+                li {
+
+                }
+              }
+            }
+
+          }
+
+          .submit-button {
+
+            button {
+
+            }
+
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    .container {
+      padding: 48px 16px;
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+
+        .logo {
+          img {
+          }
+        }
+      }
+
+      .queueMain {
+        .title {
+          h1 {
+            font-size: 30px;
+            margin-bottom: 32px;
+          }
+
+        }
+
+        .form {
+          padding: 0;
+
+          .row {
+            input, select, textarea {
+              margin-bottom: 16px;
+            }
+
+            .select-input, .phone-num-input {
+              margin-bottom: 16px !important;
+            }
+
+            textarea {
+              padding: 12px 16px 46px;
+            }
+
+            #phone-num {
+              .phone-num-input {
+              }
+
+              .phone-select {
+                width: 25%;
+
+                button {
+                }
+
+                ul {
+                }
+
+                .select-input {
+                }
+              }
+            }
+
+            .car-code {
+            }
+
+            .select {
+              input {
+
+              }
+
+              button {
+
+              }
+
+              ul {
+
+                .active {
+
+                }
+
+                li {
+
+                }
+              }
+            }
+
+          }
+
+          .buttons {
+            flex-direction: column-reverse;
+
+            button {
+              margin-bottom: 16px;
+            }
+
+          }
+        }
+
       }
     }
   }

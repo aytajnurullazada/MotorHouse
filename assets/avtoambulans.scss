@@ -4,58 +4,7 @@
 
   .container {
     .auto-ambulance {
-      .title {
-        h1 {
-          color: white;
-          font-size: 42px;
-          line-height: 50px;
-          font-weight: 700;
-          margin-bottom: 16px;
-        }
-      }
-
-      .breadcrumb {
-        align-items: center;
-        padding: 0;
-        margin-bottom: 48px;
-
-        .list {
-          background-color: rgba(38, 38, 38, 1);
-          padding: 0;
-
-          .list-item {
-            padding: 15px 24px 13px 24px;
-
-            a {
-              display: flex;
-              align-items: center;
-              color: rgba(160, 164, 168, 1);
-              font-size: 14px;
-              line-height: 24px;
-
-              img {
-                margin-left: 24px;
-              }
-            }
-
-            &:first-child {
-              background-color: #2E2E2E;
-              padding: 15px 29px 13px 29px;
-
-              img {
-                margin-right: 12px;
-                margin-left: 0;
-              }
-            }
-          }
-
-          .active {
-            a {
-              color: rgba(255, 255, 255, 1);
-            }
-          }
-        }
-      }
+      margin-bottom: 48px;
 
       .content {
         .text {
@@ -70,7 +19,8 @@
           background-image: url("../img/logo-bg.png");
           background-size: 604.15px 356px;
           background-repeat: no-repeat;
-          img{
+
+          img {
             width: 100%;
           }
         }
@@ -91,13 +41,18 @@
       }
 
       .main {
-        .card {
+        .services-card {
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
           margin-right: 32px;
           min-height: 568px;
-
+          margin-bottom: 32px;
           display: flex;
           align-items: center;
           background-color: #262626;
+          width: 100%;
 
           .card-img {
             text-align: center;
@@ -107,6 +62,7 @@
           .card-title {
             margin-top: 16px;
             margin-bottom: 24px;
+            text-align: center;
 
             span {
               color: white;
@@ -123,9 +79,218 @@
                 display: flex;
                 margin-bottom: 8px;
                 color: white;
-                .image{
+
+                .image {
                   display: inline-block;
                   margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .auto-main {
+    padding: 48px 16px;
+
+    .container {
+      max-width: 100%;
+
+      .auto-ambulance {
+
+        .content {
+          .text {
+            p {
+              font-size: 24px;
+              line-height: 30.24px
+            }
+          }
+
+          .image {
+            background-size: 388.62px, 229px;
+
+            img {
+
+            }
+          }
+        }
+
+      }
+
+      .services {
+        .title {
+
+
+          h1 {
+            font-size: 32px;
+          }
+        }
+
+        .main {
+          .services-card {
+
+            .card-img {
+
+            }
+
+            .card-title {
+
+
+              span {
+
+
+              }
+            }
+
+            .card-menu {
+              .list {
+                .list-item {
+
+                  .image {
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .auto-main {
+    padding: 48px 16px;
+
+    .container {
+      max-width: 100%;
+
+      .auto-ambulance {
+
+        .content {
+          .text {
+            p {
+              font-size: 16px;
+              line-height: 20.16px;
+              background-image: url("../img/logo-bg.png");
+              background-size: 375px, 220.98px;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+
+          .image {
+            background: none;
+
+            img {
+
+            }
+          }
+        }
+
+      }
+
+      .services {
+        .title {
+
+
+          h1 {
+            font-size: 28px;
+          }
+        }
+
+        .main {
+          .services-card {
+
+            .card-img {
+
+            }
+
+            .card-title {
+
+
+              span {
+
+
+              }
+            }
+
+            .card-menu {
+              .list {
+                .list-item {
+
+                  .image {
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .auto-main {
+    .container {
+      .auto-ambulance {
+
+        .content {
+          .text {
+            p {
+            }
+          }
+
+          .image {
+
+            img {
+
+            }
+          }
+        }
+
+      }
+
+      .services {
+        .title {
+
+
+          h1 {
+            font-size: 24px;
+          }
+        }
+
+        .main {
+          .services-card {
+            margin-right: 0;
+
+            .card-img {
+
+            }
+
+            .card-title {
+
+
+              span {
+
+
+              }
+            }
+
+            .card-menu {
+              .list {
+                .list-item {
+
+                  .image {
+
+                  }
                 }
               }
             }
