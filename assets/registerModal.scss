@@ -22,6 +22,7 @@ section.registerModalOverlay {
     align-items: center;
 
     .closeModalBtn {
+      cursor: pointer;
       position: absolute;
       top: -24px;
       right: -22px;

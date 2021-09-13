@@ -4,7 +4,7 @@ section.mobile-menu {
   position: absolute;
   z-index: 2;
   display: none;
-  height: auto;
+  height: 50%;
   overflow: auto;
 
   .container {
@@ -19,14 +19,14 @@ section.mobile-menu {
         background-color: #FFDD00;
 
         .close-btn {
-
-
+          cursor: pointer;
           img {
 
           }
         }
 
         .phone {
+          cursor: pointer;
           img {
             margin-right: 4px;
           }
@@ -224,6 +224,7 @@ section.mobile-menu {
   section.mobile-menu {
     top: 0;
     width: 100%;
+    height: 100%;
     .container {
       .row {
         .menu-header {

@@ -21,6 +21,7 @@ section.loginModalOverlay {
     align-items: center;
 
     .closeModalBtn {
+      cursor: pointer;
       position: absolute;
       top: -24px;
       right: -22px;
@@ -101,6 +102,7 @@ section.loginModalOverlay {
           }
 
           .seePswrd {
+            cursor: pointer;
             position: absolute;
             top: 19px;
             right: 15px;

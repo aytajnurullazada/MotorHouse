@@ -65,7 +65,7 @@ $(document).ready(function () {
         $('body').css('overflow', 'auto')
     })
 
-    $('.site-button').on('click', () => {
+    $('.sign-in').on('click', () => {
         $('.loginModalOverlay').show()
     })
 

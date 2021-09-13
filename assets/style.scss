@@ -6,6 +6,9 @@ $dark: #222;
   font-family: "Pt root ui", sans-serif !important;
   font-size: 16px;
   list-style: none;
+  button{
+    cursor: pointer;
+  }
 
   a {
     text-decoration: none;
@@ -71,13 +74,66 @@ $dark: #222;
         margin-right: 24px;
 
         .menu-link {
+          line-height: 20.16px;
+          color:  rgba(0, 0, 0, 0.75) !important;
           font-weight: 700;
           font-size: 16px;
           display: flex;
           align-items: center;
-
+          position: relative;
           img {
             margin-left: 8px;
+          }
+        }
+      }
+      .dropdown{
+        margin-right: 36px;
+        display: block;
+        &:focus-within{
+          .dropdown-content{
+            display: block;
+          }
+          .down-arrow{
+            display: none;
+          }
+          .right-arrow{
+            display: block!important;
+          }
+        }
+        a{
+          color:  rgba(0, 0, 0, 0.75);
+        }
+        .dropdown-content{
+          min-width: 160px;
+          display: none;
+          padding: 0;
+          position: absolute;
+          top: 30px;
+          left: 0;
+          white-space: nowrap;
+          border-radius: 8px;
+          z-index: 1;
+          background: rgba(38, 38, 38, 1);
+          li{
+            padding: 12px 16px;
+            &:hover{
+              background-color: $main-color;
+            }
+            &:first-child{
+              padding-top: 16px;
+              border-radius: 8px 8px 0 0;
+            }
+            &:last-child{
+              padding-bottom: 16px;
+              border-radius: 0 0 8px 8px;
+            }
+            a{
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 16px;
+              color: rgba(255, 255, 255, 1);
+            }
+
           }
         }
       }
@@ -446,6 +502,7 @@ section.footer {
       .first {
         .logo {
           margin-bottom: 42px;
+          cursor: pointer;
         }
 
         .social {
@@ -479,7 +536,6 @@ section.footer {
               font-weight: 400;
               color: white;
               list-style: none;
-              word-break: break-all;
               //white-space: nowrap;
             }
           }
@@ -543,6 +599,7 @@ section.footer {
 
       .navbar-logo {
         .bars {
+          cursor: pointer;
           display: block !important;
           border: none;
           background: none;
