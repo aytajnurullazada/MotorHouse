@@ -28,18 +28,17 @@ $(document).ready(function () {
         $('.modal-item').hide();
     })
 
-    $('#mobile-nav').on('click', function () {
+    $(document).on('click','#mobile-nav', function () {
         $('mobile-menu').css('overflow', 'auto')
         $('.mobile-menu').toggle('slide')
         if ($(this).children('img').attr('src') == './img/times.svg') {
             $('body').css('overflow', 'auto')
             $(this).children('img').attr('src', './img/bars.svg')
-        }
-        else {
+        } else {
             $('body').css('overflow', 'hidden')
             $(this).children('img').attr('src', './img/times.svg')
         }
-        $('.li').on('click', function () {
+        $(document).on('click', '.li', function () {
             $(this).siblings('.subMenu-list').toggle()
             if ($(this).children('.menu-toggle').children('img').attr('src') == './img/MobileAngle-down.svg') {
                 $(this).children('.menu-toggle').children('img').attr('src', './img/MobileAngle-right.svg')
@@ -65,7 +64,7 @@ $(document).ready(function () {
         $('body').css('overflow', 'auto')
     })
 
-    $('.sign-in').on('click', () => {
+    $('.sign-in').on('click', () =>     {
         $('.loginModalOverlay').show()
     })
 
@@ -132,10 +131,10 @@ $(document).ready(function () {
 
     $(document).on('click', '.seePswrd', function () {
         if ($(this).children('img').attr('src') == './img/eye-slash.svg') {
-            $('.loginPsw').attr('type', 'password')
+            $(this).siblings('.loginPsw').attr('type', 'password')
             $(this).children('img').attr('src', './img/eye.svg')
         } else {
-            $('.loginPsw').attr('type', 'text')
+            $(this).siblings('.loginPsw').attr('type', 'text')
             $(this).children('img').attr('src', './img/eye-slash.svg')
         }
     })
@@ -241,9 +240,6 @@ $(document).ready(function () {
                     </div>
                     <div style="position: relative" class="error col-lg-12">
                         <input id="inputPswError2"  class="loginPsw" type="password" placeholder="Parolu təstiqlə">
-                        <div class="seePswrd">
-                            <img src="./img/eye.svg" alt="">
-                        </div>
                     </div>
 
                 </div>
@@ -298,6 +294,128 @@ $(document).ready(function () {
                     <a class="register" href="#">Qeydiyyatdan keçin</a>
                 </div>
             </div>
+        `)
+    })
+
+    $(document).on('click', '#ferdiMobile', () => {
+        $('#ferdiMenu').html(`
+        <div class="ferdiHeader d-flex align-items-center">
+            <a class="backToMobileMenu">
+            <img src="./img/chevron-left.svg" alt="">
+            </a>
+
+            <span>Fərdi</span>
+        </div>
+        <ul class="ferdiList">
+         <li>
+         <a href="#">Dövri təmir</a>
+         </li>
+         <li>
+         <a href="#">Hərəkətli hissələrin diaqnostikası</a>
+         </li>
+         <li>
+         <a href="#">Diaqnostika</a>
+         </li>
+         <li>
+         <a href="#">Elektrik diaqnostika</a>
+         </li>
+         <li>
+         <a href="#">Mühərrik işləri</a>
+         </li>
+         <li>
+         <a href="#">Sürətlər qutusu üzrə işlər</a>
+         </li>
+         <li>
+         <a href="#">Çilingər işləri</a>
+         </li>
+         <li>
+         <a href="#">Dəmirçi işləri</a>
+         </li>
+         <li>
+         <a href="#">Tənzimlənmə/balans</a>
+         </li>
+         <li>
+         <a href="#">Təmir/Rənglənmə</a>
+         </li>
+         <li>
+         <a href="#">Kosmetik işlər</a>
+         </li>
+         <li>
+         <a href="#">Avtoyuma</a>
+         </li>
+        </ul>
+        `)
+    })
+
+    $(document).on('click', '.backToMobileMenu', ()=> {
+        $('#ferdiMenu').html(`
+        <div class="menu">
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-list-item">
+                            <div class="li d-flex justify-content-between">
+                                <span>Xidmətlər</span>
+                                <div class="menu-toggle">
+                                    <img src="./img/MobileAngle-right.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="subMenu-list">
+                                <li class="subMenu-list-item d-flex justify-content-between">
+                                    <a style="width: 100%;" id="ferdiMobile" href="#">Fərdi</a>
+                                    <img src="./img/MobileAngle-right.svg" alt="">
+                                </li>
+                                <li class="subMenu-list-item">
+                                    <a href="#">Korparativ</a>
+                                </li>
+                                <li class="subMenu-list-item">
+                                    <a href="#">Sığorta halları</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="avtoAmbulans.html">
+                                Avto Ambulans
+                            </a>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <div class="li d-flex justify-content-between">
+                                <span>Avto Market</span>
+                                <div class="menu-toggle">
+                                    <img src="./img/MobileAngle-right.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="subMenu-list">
+                                <li class="subMenu-list-item">
+                                    <a href="#"></a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="elektrikAvtomobilleri.html">
+                                Elektrik Avtomobilləri
+                            </a>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="sualCavab.html">
+                                Suallar/Cavablar
+                            </a>
+                        </li>
+                        <li class="mobile-menu-list-item">
+                            <a href="about.html">
+                                Motor house haqqında
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="line">
+                </div>
+                <div class="login-button d-flex justify-content-center">
+                    <a class="mobile-btn sign-in" href="#">
+                        <img src="./img/sign-in.svg" alt="">
+                        Daxil ol
+                    </a>
+                </div>
         `)
     })
 });

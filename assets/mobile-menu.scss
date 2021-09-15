@@ -6,7 +6,6 @@ section.mobile-menu {
   display: none;
   height: 50%;
   overflow: auto;
-
   .container {
     max-width: 100%;
 
@@ -125,6 +124,34 @@ section.mobile-menu {
             margin-right: 8px;
           }
         }
+      }
+    }
+  }
+}
+
+#ferdiMenu{
+  .ferdiHeader{
+    margin-bottom: 24px;
+    img{
+      margin-right: 16px;
+    }
+    a{
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 18px;
+
+    }
+  }
+  .ferdiList{
+    li{
+      margin-bottom: 16px;
+      a{
+        color: white;
+        line-height: 20.16px;
+        font-weight: 700;
+        font-size: 16px;
+
       }
     }
   }

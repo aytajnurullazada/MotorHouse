@@ -57,7 +57,8 @@
                     </div>
                 </div>
                 <div class="field-agreement d-flex">
-                    <label class="customCheckbox">Bizim <a href="#">Qaydalar və Verilənlərin gizliliyi</a> ilə tanış olub təstiqləyin
+                    <label class="customCheckbox">Bizim <a href="#">Qaydalar və Verilənlərin gizliliyi</a> ilə tanış
+                        olub təstiqləyin
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
@@ -136,7 +137,7 @@
                     <span>*8555</span>
                 </div>
             </div>
-            <div style="padding: 40px 16px">
+            <div id="ferdiMenu" style="padding: 40px 16px">
                 <div class="menu">
                     <ul class="mobile-menu-list">
                         <li class="mobile-menu-list-item">
@@ -147,8 +148,9 @@
                                 </div>
                             </div>
                             <ul class="subMenu-list">
-                                <li class="subMenu-list-item">
-                                    <a href="#">Fərdi</a>
+                                <li class="subMenu-list-item d-flex justify-content-between">
+                                    <a style="width: 100%;" id="ferdiMobile" href="#">Fərdi</a>
+                                    <img src="./img/MobileAngle-right.svg" alt="">
                                 </li>
                                 <li class="subMenu-list-item">
                                     <a href="#">Korparativ</a>
@@ -244,15 +246,59 @@
                         </div>
                     </a>
                     <ul class="dropdown-content">
-                        <li>
+                        <li class="dropdown-li d-flex align-items-center justify-content-between" id="ferdi">
                             <a href="#">Fərdi</a>
+                            <div class="down-yellow">
+                                <img src="./img/chevron-downYellow.svg" alt="">
+                            </div>
+                            <div style="display: none" class="right-yellow">
+                                <img src="./img/chevron-rightYellow.svg" alt="">
+                            </div>
+                            <ul class="dropdown-sub-content">
+                                <li>
+                                    <a href="#">Dövri təmir</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hərəkətli hissələrin diaqnostikası</a>
+                                </li>
+                                <li>
+                                    <a href="#">Diaqnostika</a>
+                                </li>
+                                <li>
+                                    <a href="#">Elektrik diaqnostika</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mühərrik işləri</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sürətlər qutusu üzrə işlər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Çilingər işləri</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dəmirçi işləri</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tənzimlənmə/balans</a>
+                                </li>
+                                <li>
+                                    <a href="#">Təmir/Rənglənmə</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kosmetik işlər</a>
+                                </li>
+                                <li>
+                                    <a href="#">Avtoyuma</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
+                        <li class="dropdown-li">
                             <a href="#">
                                 Korparativ
                             </a>
                         </li>
-                        <li>
+                        <li class="dropdown-li">
                             <a href="#">
                                 Sığorta halları
                             </a>
