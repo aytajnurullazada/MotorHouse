@@ -165,7 +165,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <input placeholder="Vaxt" type="time">
+                    <input phone-mask type="text" placeholder="Vaxt"/>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <textarea placeholder="Görüləcək iş" name=""></textarea>
@@ -200,5 +200,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="assets/carousel.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.62/jquery.inputmask.bundle.js"></script>
+<script>
+    $(document).ready(function () {
+
+        let date = [{ "mask": "##-##-#### ##:##" }, { "mask": "##.##.#### ##:##" }];
+        $('[phone-mask]').inputmask({
+            mask: date,
+            greedy: false,
+            definitions: {
+                '#': { validator: "[0-9]", cardinality: 1 } }
+        });
+    });
+</script>
 </body>
 </html>

@@ -418,4 +418,12 @@ $(document).ready(function () {
                 </div>
         `)
     })
+
+    $('#demo').datetimepicker({
+        inline:true,
+    });
+
+
+
+
 });
